@@ -4,49 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shoyemi Maria bio</title>
+  <title>Shoyemi Maria Bio</title>
+  <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
-  <h1>A day in the life of Maria</h1>
+  <header>
+    <h1>A Day in the Life of Maria</h1>
+  </header>
 
-  <!--Picture element-->
-  <picture>
-    <source media="(min-width: 800px)" 
-            srcset="images/mariapic-360.jpg 360w,
-              images/mariapic-720.jpg 720w,
-              images/mariapic-1440.jpg 1440w" 
-             sizes="33.3vw"
-    >
+  <main>
+    <!-- Picture element -->
+    <section>
+      <picture>
+        <source media="(min-width: 800px)" 
+                srcset="images/mariapic-360.jpg 360w,
+                  images/mariapic-720.jpg 720w,
+                  images/mariapic-1440.jpg 1440w" 
+                 sizes="33.3vw">
+        <source srcset="images/mariapic-720.jpg 2x,
+                 images/mariapic-360.jpg 1x">
+        <img src="images/mariapic.jpg" alt="Shoyemi Maria picture">
+      </picture>
+      <p>
+        Hi, I'm Shoyemi Maria, a passionate software engineer with a strong background in technology and a drive to
+        transform lives through innovative solutions. I am currently pursuing a Diploma in Frontend Development at AltSchool Africa.
+      </p>
+    </section>
 
-    <source srcset="images/mariapic-720.jpg 2x,
-             images/mariapic-360.jpg 1x">
+    <!-- Audio element -->
+    <section>
+      <h2>Listen to My Frontend Developer Journey</h2>
+      <audio controls>
+        <source src="audio/maria-journey.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
 
-    <img src="images/mariapic.jpg" alt="Shoyemi Maria picture">
-  </picture>
+    <!-- Video element -->
+    <section>
+      <h2>Watch My Projects in Action</h2>
+      <video controls width="600">
+        <source src="videos/maria-projects.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
 
-  <p>
-    Hi, I'm Shoyemi Maria, a passionate software engineer with a strong background in technology and a drive to
-    transform lives through innovative solutions. I am currently pursuing a Diploma in Frontend Development at AltSchool Africa.
-  </p>
+    <!-- Embed element -->
+    <section>
+      <h2>Explore My Portfolio</h2>
+      <embed src="portfolio/index.html" width="600" height="400">
+    </section>
 
-  <!--Audio element-->
-  <h2>
-    Listen to my Frontend developer journey
-  </h2>
-  <audio>
-  </audio>
+    <!-- GitHub and Portfolio Links -->
+    <section>
+      <h2>Connect with Me</h2>
+      <p>
+        <a href="https://github.com/Mariahnikee" target="_blank">GitHub</a> |
+        <a href="https://mariahnikee.github.io/portfolio/" target="_blank">Portfolio</a>
+      </p>
+    </section>
 
-  <!--Video element-->
-  <h2>Watch my projects in action</h2>
-  <video></video>
-
-   <!--Embed element-->
-   <h2>Explore my portfolio</h2>
-   <embed>
-
-  <p>Whether it's crafting responsive designs or coding dynamic web applications, I am committed to excellence and
-    continuous learning. Explore more about my work and let's connect!</p>
+    <p>Whether it's crafting responsive designs or coding dynamic web applications, I am committed to excellence and
+      continuous learning. Explore more about my work and let's connect!</p>
+  </main>
 </body>
 
 </html>

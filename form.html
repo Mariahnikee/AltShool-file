@@ -1,109 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="form.css" rel="stylesheet" />
   <title>Form</title>
 </head>
+
 <body>
   <header>
     <p>
-      Already an AltScholer?  
-      <a href="index.html" target="_blank"> 
+      Already an AltScholer?
+      <a href="table.html" target="_blank" class="signin">
         Sign in!
-      </a> 
+      </a>
     </p>
-    </header>
+  </header>
 
-    <main>
-      <h1>
-        Signup 
-      </h1>
-      <p>
-        Take the next steps to apply at AltSchool Africa
-      </p>
+  <main>
+    <div class="heading">
+    <h1>Signup</h1>
+    <p class="subheading">
+      Take the next steps to apply at AltSchool Africa
+    </p>
+  </div>
+
+    <div class="card">
     <form>
-     <label>
-      First Name     
-    </label>
-    <input type="text" placeholder="Enter first name"> 
+      <div class="form-row">
+        <label for="first-name">
+          First Name
+          <input type="text" id="first-name" placeholder="Enter first name" required>
+        </label>
+        <label>
+          Last Name
+          <input type="text" placeholder="Enter last name">
+        </label>
+      </div>
 
-     <label>
-       Name
-     </label>
-     <input type="text" placeholder="Enter last name">
-      <br>
-     <label>
-        Gender
-     </label>
-     <select>
-      <option>Select gender</option>
-      <option >Female</option>
-      <option>Male</option>
-    </select>
+      <div class="form-row">
+        <label>
+          Gender
+          <select>
+            <option>Select gender</option>
+            <option>Female</option>
+            <option>Male</option>
+          </select>
+        </label>
+        <label>
+          Date of Birth
+          <input type="date">
+        </label>
+      </div>
 
-     <label>
-        Date of Birth
-     </label>
-     <input type="date">
-     <br>
-     <label>Email Address
-     </label>
-     <input placeholder="Enter email address">
+      <div class="form-row">
+        <label>
+          Email Address
+          <input type="email" placeholder="Enter email address">
+        </label>
+        <label>
+          Phone Number
+          <input type="tel" id="phone" placeholder="08154345400" pattern="[0-9]{11}" required>
+        </label>
+      </div>
 
-     <label>
-        Phone Number
-        <input type="number" placeholder="08154345400">
-     </label>
+      <div class="form-row">
+        <label>
+          Country
+          <select>
+            <option class="dropmenu">Select your country</option>
+            <option type="Country"></option>
+          </select>
+        </label>
+        <label>
+          State/ City of Residence
+          <input type="text" placeholder="Enter your state">
+        </label>
+      </div>
 
-     <br>
-     <label>
-        Country
-     </label>
-      <select>
-        <option>Select your country</option>
-        <option type="Country"></option>
-      </select>
-
-     <label>
-        State/ City of Residence
-     </label>
-        <input type="text" placeholder="Enter you state">
-     
-     <br>
-     <label>
+      <label class="full-width">
         How did you hear about us
-     </label>
-     <select>
+      </label>
+      <select class="aboutus full-width">
         <option>Select channel</option>
-        <option>twitter</option>
-        <option>linklin</option>
+        <option>Twitter</option>
+        <option>LinkedIn</option>
         <option>Facebook</option>
         <option>Instagram</option>
         <option>Friend</option>
         <option>WhatsApp</option>
-        <option>Bill board</option>
+        <option>Billboard</option>
       </select>
+      
+      <div class="form-row">
+        <label>
+          Password
+          <input type="password" placeholder="Enter password">
+        </label>
+        <label>
+          Confirm Password
+          <input type="password" placeholder="Enter password again">
+        </label>
+      </div>
 
-     <br>
-     <label>
-        Password
-     </label>
-       <input type="password" placeholder="Enter passsword">
-     <label>Confirm Password
-        <input type="password" placeholder="Enter password again">
-     </label>
-     <br>
-     <br>
-    <p>
-       By clicking contine, I agree to 
-        <span>Terms of Use</span>
-       and acknowledge that I have read the 
-        <span>Privacy Policy.</span>
-    </p>
-     <button>Submit</button>
+      <p>
+        By clicking continue, I agree to
+        <a href="#" class="terms">Terms of Use</a>
+        and acknowledge that I have read the
+        <a href="#" class="privacy">Privacy Policy.</a>
+      </p>
+      <button>Submit</button>
     </form>
-    </main>
-    
+  </div>
+  </main>
 </body>
 </html>
