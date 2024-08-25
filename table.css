@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+table {
+  width: 100%;
+  border:1px solid #457147 ;
+  
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #232523;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+th {
+  text-transform: uppercase;
+}
+
+td {
+  vertical-align: top;
+}
+
+td[rowspan] {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+}
