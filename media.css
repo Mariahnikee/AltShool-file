@@ -3,7 +3,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #edecec;
   color: #333;
 }
 
@@ -42,8 +42,6 @@ img {
 audio, video {
   display: block;
   margin: 1rem auto;
-  
-  
 }
 
 video {
@@ -51,13 +49,12 @@ video {
   margin: 1rem auto;
   width: 50%;
   max-width: 600px;
-  height: 50%; 
+  height: 40%; 
   object-fit: cover; 
   border-radius: 20px;
 }
 
-
-embed {
+iframe {
   display: block;
   margin: 1rem auto;
   width: 100%;
@@ -74,9 +71,9 @@ h2 {
 }
 
 footer {
-  
-  margin: 0 15px;
-  
+  background-color: #e5dede;
+  padding: 1rem;
+  text-align: center;
 }
 
 footer a {
@@ -85,6 +82,9 @@ footer a {
   margin: 0 15px;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
 
 @media (min-width: 800px) {
   main {
@@ -92,5 +92,3 @@ footer a {
     margin: 0 auto;
   }
 }
-
-/*resize video*/

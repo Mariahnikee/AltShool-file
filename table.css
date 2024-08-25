@@ -7,16 +7,17 @@ body {
 
 table {
   width: 100%;
-  border:1px solid #457147 ;
-  
+  border-collapse: collapse; /* Ensures borders are collapsed */
   margin: 20px 0;
   font-size: 18px;
   text-align: left;
+  border: 1px solid #457147;
 }
 
 th, td {
   padding: 12px;
   border-bottom: 1px solid #ddd;
+  box-sizing: border-box; /* Consistent box-sizing */
 }
 
 thead {
@@ -40,4 +41,5 @@ td[rowspan] {
   background-color: #f2f2f2;
   font-weight: bold;
   text-align: center;
+  vertical-align: middle; /* Centers content vertically */
 }

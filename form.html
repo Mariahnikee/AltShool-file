@@ -1,118 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="form.css" rel="stylesheet" />
-  <title>Form</title>
-</head>
-
-<body>
-  <header>
-    <p>
-      Already an AltScholer?
-      <a href="table.html" target="_blank" class="signin">
-        Sign in!
-      </a>
-    </p>
-  </header>
-
-  <main>
-    <div class="heading">
-    <h1>Signup</h1>
-    <p class="subheading">
-      Take the next steps to apply at AltSchool Africa
-    </p>
-  </div>
-
-    <div class="card">
-    <form>
-      <div class="form-row">
-        <label for="first-name">
-          First Name
-          <input type="text" id="first-name" placeholder="Enter first name" required>
-        </label>
-        <label>
-          Last Name
-          <input type="text" placeholder="Enter last name">
-        </label>
-      </div>
-
-      <div class="form-row">
-        <label>
-          Gender
-          <select>
-            <option>Select gender</option>
-            <option>Female</option>
-            <option>Male</option>
-          </select>
-        </label>
-        <label>
-          Date of Birth
-          <input type="date">
-        </label>
-      </div>
-
-      <div class="form-row">
-        <label>
-          Email Address
-          <input type="email" placeholder="Enter email address">
-        </label>
-        <label>
-          Phone Number
-          <input type="tel" id="phone" placeholder="08154345400" pattern="[0-9]{11}" required>
-        </label>
-      </div>
-
-      <div class="form-row">
-        <label>
-          Country
-          <select>
-            <option class="dropmenu">Select your country</option>
-            <option type="Country"></option>
-          </select>
-        </label>
-        <label>
-          State/ City of Residence
-          <input type="text" placeholder="Enter your state">
-        </label>
-      </div>
-
-      <label class="full-width">
-        How did you hear about us
-      </label>
-      <select class="aboutus full-width">
-        <option>Select channel</option>
-        <option>Twitter</option>
-        <option>LinkedIn</option>
-        <option>Facebook</option>
-        <option>Instagram</option>
-        <option>Friend</option>
-        <option>WhatsApp</option>
-        <option>Billboard</option>
-      </select>
-      
-      <div class="form-row">
-        <label>
-          Password
-          <input type="password" placeholder="Enter password">
-        </label>
-        <label>
-          Confirm Password
-          <input type="password" placeholder="Enter password again">
-        </label>
-      </div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="form.css" rel="stylesheet" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
       <p>
-        By clicking continue, I agree to
-        <a href="#" class="terms">Terms of Use</a>
-        and acknowledge that I have read the
-        <a href="#" class="privacy">Privacy Policy.</a>
+        Already an AltScholer?
+        <a href="table.html" target="_blank" class="signin">Sign in!</a>
       </p>
-      <button>Submit</button>
-    </form>
-  </div>
-  </main>
-</body>
+    </header>
+    <main>
+      <div class="heading">
+        <h1>Signup</h1>
+        <p class="subheading">
+          Take the next steps to apply at AltSchool Africa
+        </p>
+      </div>
+      <div class="card">
+        <form>
+          <div class="form-row">
+            <label for="first-name"
+              >First Name
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Enter first name"
+                required
+              />
+            </label>
+            <label for="last-name"
+              >Last Name
+              <input type="text" id="last-name" placeholder="Enter last name" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label for="gender"
+              >Gender
+              <select id="gender">
+                <option>Select gender</option>
+                <option>Female</option>
+                <option>Male</option>
+              </select>
+            </label>
+            <label for="dob"
+              >Date of Birth
+              <input type="date" id="dob" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label for="email"
+              >Email Address
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter email address"
+              />
+            </label>
+           <label for="phone"
+              >Phone Number
+              <input
+                type="number"
+                id="phone"
+                placeholder="08154345400"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-row">
+            <label for="country"
+              >Country
+              <select id="country">
+                <option>Select your country</option>
+                <option>Nigeria</option>
+                <option>Ghana</option>
+                <option>UK</option>
+                <option>South Africa</option>
+                <option>Canada</option>
+              </select>
+            </label>
+            <label for="state-city"
+              >State/City of Residence
+              <input
+                type="text"
+                id="state-city"
+                placeholder="Enter your state"
+              />
+            </label>
+          </div>
+          <label for="aboutus" class="full-width"
+            >How did you hear about us
+          </label>
+          <select id="aboutus" class="aboutus full-width">
+            <option>Select channel</option>
+            <option>Twitter</option>
+            <option>LinkedIn</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>Friend</option>
+            <option>WhatsApp</option>
+            <option>Billboard</option>
+          </select>
+          <div class="form-row">
+            <label for="password"
+              >Password
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+              />
+            </label>
+            <label for="confirm-password"
+              >Confirm Password
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Enter password again"
+              />
+            </label>
+          </div>
+          <p>
+            By clicking continue, I agree to
+            <a href="#" class="terms">Terms of Use</a> and acknowledge that I
+            have read the
+            <a href="#" class="privacy">Privacy Policy.</a>
+          </p>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
